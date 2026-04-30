@@ -1,45 +1,49 @@
 # Humanizer
 
-A skill for Claude Code and OpenCode that removes signs of AI-generated writing from text, making it sound more natural and human.
+A skill that removes signs of AI-generated writing from text, making it sound more natural and human. Works with Pi, Claude Code, and OpenCode.
 
 ## Installation
 
-### Claude Code
-
-Clone directly into Claude Code's skills directory:
+### Pi
 
 ```bash
-mkdir -p ~/.claude/skills
-git clone https://github.com/blader/humanizer.git ~/.claude/skills/humanizer
+pi install git:github.com/blader/humanizer
 ```
 
-Or copy the skill file manually if you already have this repo cloned:
+To install to your project instead of globally:
 
 ```bash
-mkdir -p ~/.claude/skills/humanizer
-cp SKILL.md ~/.claude/skills/humanizer/
+pi install -l git:github.com/blader/humanizer
+```
+
+### Claude Code
+
+Copy the skill directory into Claude Code's skills folder:
+
+```bash
+cp -r skills/humanizer ~/.claude/skills/humanizer
 ```
 
 ### OpenCode
 
-Clone directly into OpenCode's skills directory:
+Copy the skill directory into OpenCode's skills folder:
 
 ```bash
-mkdir -p ~/.config/opencode/skills
-git clone https://github.com/blader/humanizer.git ~/.config/opencode/skills/humanizer
+cp -r skills/humanizer ~/.config/opencode/skills/humanizer
 ```
 
-Or copy the skill file manually if you already have this repo cloned:
-
-```bash
-mkdir -p ~/.config/opencode/skills/humanizer
-cp SKILL.md ~/.config/opencode/skills/humanizer/
-```
-
-> **Note:** OpenCode also scans `~/.claude/skills/` for compatibility, so a single clone into `~/.claude/skills/humanizer/` works for both tools.
+> **Note:** OpenCode also scans `~/.claude/skills/` for compatibility, so copying into `~/.claude/skills/humanizer/` works for both tools.
 
 ## Usage
 
+### Pi
+
+In any Pi session, the skill activates automatically when you ask to humanize or edit text for AI-writing patterns:
+
+```
+Please humanize this text: [your text]
+```
+
 ### Claude Code
 
 ```
@@ -56,7 +60,7 @@ cp SKILL.md ~/.config/opencode/skills/humanizer/
 [paste your text here]
 ```
 
-Or ask the model to humanize text directly in either tool:
+Or ask the model directly in any of these tools:
 
 ```
 Please humanize this text: [your text]
