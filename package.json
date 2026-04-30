@@ -1,0 +1,29 @@
+{
+  "name": "humanizer",
+  "version": "2.5.1",
+  "description": "Remove signs of AI-generated writing from text. Based on Wikipedia's comprehensive 'Signs of AI writing' guide.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "skills",
+    "humanizer",
+    "writing",
+    "ai-detection",
+    "ai-writing",
+    "editing"
+  ],
+  "author": "Siqi Chen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blader/humanizer.git"
+  },
+  "homepage": "https://github.com/blader/humanizer#readme",
+  "bugs": {
+    "url": "https://github.com/blader/humanizer/issues"
+  },
+  "pi": {
+    "skills": ["./skills"]
+  },
+  "files": ["skills/", "README.md", "LICENSE"]
+}
