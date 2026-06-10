@@ -1,0 +1,11 @@
+{
+  "name": "humanizer",
+  "version": "2.5.1",
+  "description": "Remove signs of AI-generated writing from text. Based on Wikipedia's comprehensive 'Signs of AI writing' guide.",
+  "author": {
+    "name": "Siqi Chen",
+    "url": "https://github.com/blader"
+  },
+  "homepage": "https://github.com/blader/humanizer#readme",
+  "license": "MIT"
+}

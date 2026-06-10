@@ -1,0 +1,18 @@
+{
+  "name": "humanizer",
+  "owner": {
+    "name": "Siqi Chen",
+    "url": "https://github.com/blader"
+  },
+  "metadata": {
+    "description": "Humanizer skill for Claude Code — remove signs of AI-generated writing."
+  },
+  "plugins": [
+    {
+      "name": "humanizer",
+      "source": "./",
+      "description": "Remove the 29 signs of AI-generated writing; optional voice calibration and personality injection.",
+      "category": "writing"
+    }
+  ]
+}
